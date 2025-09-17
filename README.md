@@ -188,8 +188,6 @@ def forward(x, hx=None, batch_first=False):
   </figure>
 </div>
 
-### pack_padded_sequence和pad_packed_sequence
-
 好在pytorch工程师也考虑了这一点，弄了两个工具函数专门来帮助处理
 
 * **pack_padded_sequence** 把填充后的batch和序列长度合成一个长序列：(seq,batch, dim) -> (seq*batch, dim)
