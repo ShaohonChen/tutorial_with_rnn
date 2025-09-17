@@ -169,11 +169,20 @@ python train_cls_rnn.py
   </figure>
 </div>
 
+> 实验记录见：<https://swanlab.cn/@ShaohonChen/tutorial_with_rnn/charts>
+
 可见模型基本在4k左右的训练步长时会突然出现“啊哈时刻🤪”，突然顿悟了怎么计算求余数，此后准确率飞速增长，到75%的准确率。
 
 P.S. 笔者一开始设置只运行1k-2k steps。结果发现老收敛不了。后来拉大训练步骤后出现奇迹了。
 
 > 如果提示输入swanlab api key可参考[swanlab登陆指南](https://docs.swanlab.cn/guide_cloud/general/quick-start.html)来使用SwanLab监控训练指标～ SwanLab是一个非常好用且免费的在线训练监控工具，希望大家能够多多支持。
+
+<div align="center">
+  <figure>
+  <img src="./resource/swanlab_logo.png" alt="rnn" width="400" />
+  <figcaption>SwanLab工具，后面教程关于调参部分的实验结果可以在SwanLab上查看</figcaption>
+  </figure>
+</div>
 
 ## 评估推理代码
 
@@ -231,6 +240,8 @@ python train_cls_rnn.py --batch_size 64 --lr 0.005 --run_name large_batch_lr5e-3
   </figure>
 </div>
 
+> 实验记录见：<https://swanlab.cn/@ShaohonChen/tutorial_with_rnn/charts>
+
 一条漂亮的损失曲线！不仅提前收敛了，并且准确率来到了91%！😄
 
 不过仍然不够，这个任务理论上有更优的解。
@@ -258,6 +269,8 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --run_name deeper_rnn
   </figure>
 </div>
 
+> 实验记录见：<https://swanlab.cn/@ShaohonChen/tutorial_with_rnn/charts>
+
 当然可以看到虽然模型训练的更为滞后，但是这仍带来了明显的收益。
 
 ### SOTA模型的诞生：组合策略带来的性能提升
@@ -278,6 +291,8 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
   <figcaption>黄色是baseline，三个组合别的sota策略发现有一个是收敛的</figcaption>
   </figure>
 </div>
+
+> 实验记录见：<https://swanlab.cn/@ShaohonChen/tutorial_with_rnn/charts>
 
 笔者进一步分析实验结果，发现相比于收敛的实验，不收敛的模型在loss初期存在一个明显的震荡。这里还是带货一下SwanLab，如果不做数值分析真的找不出这些问题;-)
 
@@ -310,6 +325,10 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 ```
 
 Bingo！这次模型非常稳定的实现了收敛，笔者重复了三次实验也没发现无法收敛的情况！
+
+并且准确率也来到了惊人的100%，因为测试集每次是随机生成100%，理论上不存在过拟合的问题。
+
+> 实验记录见：<https://swanlab.cn/@ShaohonChen/tutorial_with_rnn/charts>
 
 <div align="center">
   <figure>
