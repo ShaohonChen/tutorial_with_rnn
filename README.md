@@ -31,7 +31,7 @@ $$
 <div align="center">
   <figure>
   <img src="./resource/rnn.png" alt="rnn" width="600" />
-  <figcaption>将RNN的输入过程沿时间展开</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">将RNN的输入过程沿时间展开</figcaption>
   </figure>
 </div>
 
@@ -84,7 +84,7 @@ pytorch官方文档中对于`num_layers`参数的介绍如下：
 <div align="center">
   <figure>
   <img src="./resource/stackrnn.png" alt="rnn" width="400" />
-  <figcaption>将RNN的输入过程沿时间展开，图来自[1]</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">将RNN的输入过程沿时间展开，图来自[1]</figcaption>
   </figure>
 </div>
 
@@ -134,7 +134,7 @@ def forward(x, hx=None, batch_first=False):
 <div align="center">
   <figure>
   <img src="./resource/b_rnn.webp" alt="rnn" width="400" />
-  <figcaption>有两个RNN分别处理正向和反向序列，图来自[1]</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">有两个RNN分别处理正向和反向序列，图来自[1]</figcaption>
   </figure>
 </div>
 
@@ -150,7 +150,7 @@ def forward(x, hx=None, batch_first=False):
 <div align="center">
   <figure>
   <img src="./resource/different_rnn.png" alt="rnn" width="400" />
-  <figcaption>不同结构的RNN网络，红色是输入，蓝色是输出（也是隐藏状态），绿色是RNN网络[2]</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">不同结构的RNN网络，红色是输入，蓝色是输出（也是隐藏状态），绿色是RNN网络[2]</figcaption>
   </figure>
 </div>
 
@@ -175,7 +175,7 @@ def forward(x, hx=None, batch_first=False):
 <div align="center">
   <figure>
   <img src="./resource/pad.png" alt="rnn" width="600" />
-  <figcaption>填充方法，一般训练时是从右边填充（左边对齐）</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">填充方法，一般训练时是从右边填充（左边对齐）</figcaption>
   </figure>
 </div>
 
@@ -184,7 +184,7 @@ def forward(x, hx=None, batch_first=False):
 <div align="center">
   <figure>
   <img src="./resource/failed_batch_cal.png" alt="rnn" width="400" />
-  <figcaption>使用常规的batch处理方法在RNN上对于pad token没法很好的处理</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">使用常规的batch处理方法在RNN上对于pad token没法很好的处理</figcaption>
   </figure>
 </div>
 
@@ -200,7 +200,7 @@ def forward(x, hx=None, batch_first=False):
 <div align="center">
   <figure>
   <img src="./resource/pack_padded_seq.png" alt="rnn" width="600" />
-  <figcaption>`pack_padded_sequence`函数处理方法[3]</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">`pack_padded_sequence`函数处理方法[3]</figcaption>
   </figure>
 </div>
 
@@ -301,7 +301,7 @@ print(unpacked)
 <div align="center">
   <figure>
   <img src="./resource/pad_seq.png" alt="rnn" width="400" />
-  <figcaption>`pad_sequence`函数处理方法[3]</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">`pad_sequence`函数处理方法[3]</figcaption>
   </figure>
 </div>
 

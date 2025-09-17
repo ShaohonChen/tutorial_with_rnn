@@ -86,7 +86,7 @@ class SeqSumModDataset(IterableDataset):
 <div align="center">
   <figure>
   <img src="./resource/rnn_net.png" alt="rnn" width="400" />
-  <figcaption>网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</figcaption>
   </figure>
 </div>
 
@@ -165,7 +165,7 @@ python train_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/swanlab.png" alt="rnn" width="1000" />
-  <figcaption>网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</figcaption>
   </figure>
 </div>
 
@@ -180,7 +180,7 @@ P.S. 笔者一开始设置只运行1k-2k steps。结果发现老收敛不了。�
 <div align="center">
   <figure>
   <img src="./resource/swanlab_logo.png" alt="rnn" width="400" />
-  <figcaption>SwanLab工具，后面教程关于调参部分的实验结果可以在SwanLab上查看</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">SwanLab工具，后面教程关于调参部分的实验结果可以在SwanLab上查看</figcaption>
   </figure>
 </div>
 
@@ -197,7 +197,7 @@ python predict_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/example.png" alt="rnn" width="400" />
-  <figcaption>这次笔者认真附上了推理标准，再也不担心issue被抓🐦了</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">这次笔者认真附上了推理标准，再也不担心issue被抓🐦了</figcaption>
   </figure>
 </div>
 
@@ -212,7 +212,7 @@ python predict_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/baseline_loss.png" alt="rnn" width="800" />
-  <figcaption>baseline后半段损失震荡比较大</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">baseline后半段损失震荡比较大</figcaption>
   </figure>
 </div>
 
@@ -221,7 +221,7 @@ python predict_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/large_batch.png" alt="rnn" width="800" />
-  <figcaption>黄色是baseline，蓝色是batch增大了4倍的训练效果，结果准确率更低了</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，蓝色是batch增大了4倍的训练效果，结果准确率更低了</figcaption>
   </figure>
 </div>
 
@@ -243,7 +243,7 @@ python train_cls_rnn.py --batch_size 64 --lr 0.005 --run_name large_batch_lr5e-3
 <div align="center">
   <figure>
   <img src="./resource/large_batch_lr.png" alt="rnn" width="800" />
-  <figcaption>黄色是baseline，品红色是增大学习率的曲线</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，品红色是增大学习率的曲线</figcaption>
   </figure>
 </div>
 
@@ -272,7 +272,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --run_name deeper_rnn
 <div align="center">
   <figure>
   <img src="./resource/deeper_rnn.png" alt="rnn" width="800" />
-  <figcaption>黄色是baseline，绿色是更深更大的RNN网络，可见加深网络后准确率峰值达到了99%</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，绿色是更深更大的RNN网络，可见加深网络后准确率峰值达到了99%</figcaption>
   </figure>
 </div>
 
@@ -295,7 +295,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 <div align="center">
   <figure>
   <img src="./resource/sota_bad.png" alt="rnn" width="800" />
-  <figcaption>黄色是baseline，三个组合别的sota策略发现有一个是收敛的</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，三个组合别的sota策略发现有一个是收敛的</figcaption>
   </figure>
 </div>
 
@@ -306,7 +306,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 <div align="center">
   <figure>
   <img src="./resource/analyze_sota.png" alt="rnn" width="800" />
-  <figcaption>相比于收敛的实验，另两个不收敛实验损失在初期震荡严重</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">相比于收敛的实验，另两个不收敛实验损失在初期震荡严重</figcaption>
   </figure>
 </div>
 
@@ -319,7 +319,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 <div align="center">
   <figure>
   <img src="./resource/warmup.png" alt="rnn" width="400" />
-  <figcaption>学习率warm up + 余弦衰减</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">学习率warm up + 余弦衰减</figcaption>
   </figure>
 </div>
 
@@ -340,14 +340,14 @@ Bingo！这次模型非常稳定的实现了收敛，笔者重复了三次实验
 <div align="center">
   <figure>
   <img src="./resource/sota.png" alt="rnn" width="800" />
-  <figcaption>增加warm up策略后的实验，可以看到三次实验模型都稳定收敛</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">增加warm up策略后的实验，可以看到三次实验模型都稳定收敛</figcaption>
   </figure>
 </div>
 
 <div align="center">
   <figure>
   <img src="./resource/sota_single.png" alt="rnn" width="800" />
-  <figcaption>warm up后训练前期的稳定性提升了不少</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">warm up后训练前期的稳定性提升了不少</figcaption>
   </figure>
 </div>
 
@@ -358,14 +358,14 @@ Bingo！这次模型非常稳定的实现了收敛，笔者重复了三次实验
 <div align="center">
   <figure>
   <img src="./resource/example.png" alt="rnn" width="400" />
-  <figcaption>效果图</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">效果图</figcaption>
   </figure>
 </div>
 、
 <div align="center">
   <figure>
   <img src="./resource/example2.png" alt="rnn" width="400" />
-  <figcaption>超文本长度外推表现也不错</figcaption>
+  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">超文本长度外推表现也不错</figcaption>
   </figure>
 </div>
 
