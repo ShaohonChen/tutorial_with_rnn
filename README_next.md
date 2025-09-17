@@ -311,7 +311,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 
 <div align="center">
   <figure>
-  <img src="./resource/warmup.png" alt="rnn" width="800" />
+  <img src="./resource/warmup.png" alt="rnn" width="400" />
   <figcaption>学习率warm up + 余弦衰减</figcaption>
   </figure>
 </div>
