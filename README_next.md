@@ -86,7 +86,7 @@ class SeqSumModDataset(IterableDataset):
 <div align="center">
   <figure>
   <img src="./resource/rnn_net.png" alt="rnn" width="400" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</p>
   </figure>
 </div>
 
@@ -165,7 +165,7 @@ python train_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/swanlab.png" alt="rnn" width="1000" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">网络架构图，使用embedding将序列数字转换为向量，后跟多层RNN网络以及FFN分类头</p>
   </figure>
 </div>
 
@@ -180,7 +180,7 @@ P.S. 笔者一开始设置只运行1k-2k steps。结果发现老收敛不了。�
 <div align="center">
   <figure>
   <img src="./resource/swanlab_logo.png" alt="rnn" width="400" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">SwanLab工具，后面教程关于调参部分的实验结果可以在SwanLab上查看</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">SwanLab工具，后面教程关于调参部分的实验结果可以在SwanLab上查看</p>
   </figure>
 </div>
 
@@ -197,7 +197,7 @@ python predict_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/example.png" alt="rnn" width="400" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">这次笔者认真附上了推理标准，再也不担心issue被抓🐦了</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">这次笔者认真附上了推理标准，再也不担心issue被抓🐦了</p>
   </figure>
 </div>
 
@@ -212,7 +212,7 @@ python predict_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/baseline_loss.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">baseline后半段损失震荡比较大</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">baseline后半段损失震荡比较大</p>
   </figure>
 </div>
 
@@ -221,7 +221,7 @@ python predict_cls_rnn.py
 <div align="center">
   <figure>
   <img src="./resource/large_batch.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，蓝色是batch增大了4倍的训练效果，结果准确率更低了</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">黄色是baseline，蓝色是batch增大了4倍的训练效果，结果准确率更低了</p>
   </figure>
 </div>
 
@@ -243,7 +243,7 @@ python train_cls_rnn.py --batch_size 64 --lr 0.005 --run_name large_batch_lr5e-3
 <div align="center">
   <figure>
   <img src="./resource/large_batch_lr.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，品红色是增大学习率的曲线</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">黄色是baseline，品红色是增大学习率的曲线</p>
   </figure>
 </div>
 
@@ -272,7 +272,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --run_name deeper_rnn
 <div align="center">
   <figure>
   <img src="./resource/deeper_rnn.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，绿色是更深更大的RNN网络，可见加深网络后准确率峰值达到了99%</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">黄色是baseline，绿色是更深更大的RNN网络，可见加深网络后准确率峰值达到了99%</p>
   </figure>
 </div>
 
@@ -295,7 +295,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 <div align="center">
   <figure>
   <img src="./resource/sota_bad.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">黄色是baseline，三个组合别的sota策略发现有一个是收敛的</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">黄色是baseline，三个组合别的sota策略发现有一个是收敛的</p>
   </figure>
 </div>
 
@@ -306,7 +306,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 <div align="center">
   <figure>
   <img src="./resource/analyze_sota.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">相比于收敛的实验，另两个不收敛实验损失在初期震荡严重</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">相比于收敛的实验，另两个不收敛实验损失在初期震荡严重</p>
   </figure>
 </div>
 
@@ -319,7 +319,7 @@ python train_cls_rnn.py --hidden_dim 32 --num_layers 3  --batch_size 64 --lr 0.0
 <div align="center">
   <figure>
   <img src="./resource/warmup.png" alt="rnn" width="400" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">学习率warm up + 余弦衰减</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">学习率warm up + 余弦衰减</p>
   </figure>
 </div>
 
@@ -340,14 +340,14 @@ Bingo！这次模型非常稳定的实现了收敛，笔者重复了三次实验
 <div align="center">
   <figure>
   <img src="./resource/sota.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">增加warm up策略后的实验，可以看到三次实验模型都稳定收敛</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">增加warm up策略后的实验，可以看到三次实验模型都稳定收敛</p>
   </figure>
 </div>
 
 <div align="center">
   <figure>
   <img src="./resource/sota_single.png" alt="rnn" width="800" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">warm up后训练前期的稳定性提升了不少</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">warm up后训练前期的稳定性提升了不少</p>
   </figure>
 </div>
 
@@ -358,14 +358,14 @@ Bingo！这次模型非常稳定的实现了收敛，笔者重复了三次实验
 <div align="center">
   <figure>
   <img src="./resource/example.png" alt="rnn" width="400" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">效果图</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">效果图</p>
   </figure>
 </div>
 、
 <div align="center">
   <figure>
   <img src="./resource/example2.png" alt="rnn" width="400" />
-  <figcaption style="margin-top: 10px; font-size: 0.9em; color: #555;">超文本长度外推表现也不错</figcaption>
+  <p style="margin-top: 10px; font-size: 0.9em; color: #555; text-align: center;">超文本长度外推表现也不错</p>
   </figure>
 </div>
 
