@@ -252,7 +252,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=16)
     parser.add_argument("--lr", type=float, default=0.001)
     parser.add_argument("--min_lr", type=float, default=0.0001)
-    parser.add_argument("--warmup_step", type=float, default=100)
+    parser.add_argument("--warmup_step", type=float, default=0)
     parser.add_argument("--log_every", type=int, default=100)
     parser.add_argument("--eval_every", type=int, default=500)
     parser.add_argument("--save_every", type=int, default=1000)
